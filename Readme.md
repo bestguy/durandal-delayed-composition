@@ -17,6 +17,14 @@ This example triggers it when a user clicks a button.
 
 I think this example clearly shows the benefits of Durandal's use of requirejs and Knockout, and a testament to it's overall design.  Great framework!
 
+## To run (requires node.js):
+
+`npm install`
+
+`node app.js`
+
+
+
 ## Technologies Used:
 
 ### Client-Side
