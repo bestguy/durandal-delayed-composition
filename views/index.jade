@@ -1,0 +1,32 @@
+!!! 5
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+		title Delayed Durandal Composition
+		meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+
+		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css')
+		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css')
+		link(rel='stylesheet', href='/styles/main.css')
+
+	body
+
+		.text-center
+			h1 Durandal delayed app.start
+
+			#applicationHost.col-md-8.col-md-offset-2
+				.jumbotron
+					h2 Server-side rendered #applicationHost content
+					p
+						| Bits in&nbsp;
+						span.text-success Green&nbsp;
+						| are using Knockout observables and click handlers
+
+					h2.text-success(data-bind="text: message")
+
+					// This is the important part:
+					button.btn.btn-success(data-bind="click: startDurandal") Start Durandal App, composition, and router
+
+	script(src='/scripts/lib/require/require.js', data-main='/scripts/app/main')

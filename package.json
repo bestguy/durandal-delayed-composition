@@ -1,0 +1,14 @@
+{
+    "name": "durandal-delayed-composition",
+    "author": "bestguy",
+    "version": "0.0.1",
+    "dependencies": {
+        "connect": "2.11.0",
+        "express": "3.4.4",
+        "jade": "0.35.0"
+    },
+    "optionalDependencies": {},
+    "engines": {
+        "node": "*"
+    }
+}
